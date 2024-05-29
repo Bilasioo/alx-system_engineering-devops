@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+#Configuring firewall except for TCP ports 22, 80, and 443
+
+sudo apt-get update
+sudo apt-get install ufw
+
+sudo ufw default deny incoming  # Blocks all incoming traffic by default
+sudo ufw default allow outgoing # Allows all outgoing traffic by default
+sudo ufw allow 22               # Allows SSH (port 22) for remote access
+sudo ufw allow 443              # Allows HTTPS (port 443) for secure web traffic
+sudo ufw allow 80               # Allows HTTP (port 80) for web traffic
+
+sudo ufw enable
+
+sudo ufw status
