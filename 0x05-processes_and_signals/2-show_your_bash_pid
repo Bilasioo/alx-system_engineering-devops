@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#Displays lines containing the word bash
-
-$"ps" "faux" | grep "bash"
