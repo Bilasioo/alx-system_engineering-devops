@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Prints the message infinity and beyon for
+#Eternity unless it is killed, not so ethernal after all
+
+i="1"
+while [ $i -eq 1 ]
+do
+echo "To infinity and beyond"
+$"sleep" "2"
+done
